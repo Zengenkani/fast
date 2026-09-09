@@ -100,6 +100,53 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--primary);outline-of
 @media(prefers-reduced-motion:reduce){.btn,.home-portrait>img{transition:none!important;transform:none!important}}
 .page-intro>*{min-width:0}.page-intro h1{overflow-wrap:anywhere}@media(max-width:760px){html[lang=kk] .page-intro h1{font-size:clamp(32px,9vw,43px)}}
 @media(max-width:760px){.contact-strip .footer-tel{display:block;width:max-content;max-width:100%}.contact-strip>.text-link{margin-top:20px}}
+/* Home palette follows the selected theme, including navigation illustrations. */
+.corporate-home{background:var(--ice);color:var(--ink)}
+.portal-intro .eyebrow,.portal-intro p,.portal-card .portal-number,.portal-card p{color:var(--muted)}
+.portal-intro .eyebrow:before{background:var(--primary)}
+.portal-intro .text-link,.portal-intro .corp-arrow,.portal-card>.corp-arrow{color:var(--primary)}
+.portal-intro .text-link{border-color:var(--line)}
+.portal-grid,.portal-card:nth-child(n){border-color:var(--line)}
+.portal-card{color:var(--ink)}
+.portal-card:hover,.portal-card:focus-visible{background:var(--surface);border-color:var(--line)}
+.portal-card:focus-visible{outline-color:var(--primary)}
+.home-portrait>img{filter:saturate(.9)}
+.home-portrait figcaption{color:#f3f7fa}
+[data-theme=dark] .corporate-home{background:#101e2b}
+[data-theme=dark] .portal-card:hover,[data-theme=dark] .portal-card:focus-visible{background:#23394b}
+.portal-art{width:100%;height:76px;border-radius:7px;overflow:hidden;margin-top:15px;background:var(--surface);color:var(--primary)}
+.portal-art img{width:100%;height:100%;object-fit:cover;object-position:center 52%;display:block;transition:transform .4s}
+.portal-art svg{width:100%;height:100%;padding:6px;display:block}
+.portal-art-04 img{object-position:78% 45%;transform:scale(1.35)}
+.portal-card:hover .portal-art img{transform:scale(1.06)}
+.portal-card:hover .portal-art-04 img{transform:scale(1.42)}
+.portal-card h2{margin-top:14px}
+.portal-card{min-height:250px}
+@media(min-width:1200px){.home-stage{padding-block:26px}.portal-intro h1{font-size:clamp(48px,4.4vw,65px);margin-block:20px}.portal-intro{padding-block:10px}.home-portrait{min-height:360px}.portal-intro p{margin-bottom:20px}}
+@media(max-width:760px){.portal-art{height:88px}.portal-card{min-height:257px}.portal-grid,.portal-card:nth-child(n){border-color:var(--line)}}
+@media(prefers-reduced-motion:reduce){.portal-art img{transition:none}}
+/* Consistent image geometry: preserve the entire vehicle and align card content. */
+.home-portrait{aspect-ratio:4/3;min-height:0;align-self:center;border-radius:14px;width:100%}
+.home-portrait>img{object-fit:contain;object-position:center}
+.home-portrait:hover>img{transform:none}
+.portal-art{aspect-ratio:4/3;height:auto;flex:none;background:var(--surface)}
+.portal-art img{object-fit:contain;object-position:center;transform:none!important}
+.portal-art svg{padding:14px}
+.portal-card:hover .portal-art img{transform:none}
+.portal-card h2{min-height:2.7em}
+.service-grid>.info-card{padding:0 0 30px;display:flex;flex-direction:column}
+.service-grid>.info-card:before{display:none}
+.service-media{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--ice);flex:none}
+.service-media img{display:block;width:100%;height:100%;object-fit:contain}
+.service-grid>.info-card>.portal-number{margin:26px 28px 0}
+.service-grid>.info-card>h2{margin:20px 28px 16px;min-height:2.6em}
+.service-grid>.info-card>p{margin:0 28px}
+.editorial-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+.editorial-pair figure{margin:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.editorial-pair img{display:block;width:100%;aspect-ratio:3/2;height:auto;object-fit:contain}
+.editorial-pair figcaption{padding:20px 26px;font-size:17px;letter-spacing:-.025em}
+@media(max-width:760px){.home-portrait{min-height:0;border-radius:12px}.portal-art{height:auto}.portal-card{min-height:0}.service-grid>.info-card{padding-top:0;padding-bottom:26px}.service-grid>.info-card>h2{min-height:0;margin-inline:24px}.service-grid>.info-card>.portal-number{margin-inline:24px}.service-grid>.info-card>p{margin-inline:24px}.editorial-pair{grid-template-columns:1fr;gap:16px;margin-top:20px}.editorial-pair figcaption{font-size:16px;padding:18px 24px}}
+.portal-art-02 img,.portal-art-06 img{object-fit:cover}
 </style></head>
 <body data-page="company">
   <a class="skip" href="#main">К содержанию</a>
