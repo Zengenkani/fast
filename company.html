@@ -199,6 +199,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--primary);outline-of
 [data-page=index] .portal-art svg.premium-icon :is(path,circle,ellipse,rect,line,polyline,polygon){vector-effect:non-scaling-stroke;stroke-width:1.45px}
 [data-theme=dark] [data-page=index] .portal-art{background:linear-gradient(145deg,#274157,#192d40);color:#c6e3f7;border-color:#486175}
 @media(max-width:600px){[data-page=index] .portal-art svg.premium-icon{width:60px;height:60px}}
+/* Ten client identities: balanced rows and theme-aware original marks. */
+.client-logos img.kentau-logo{object-fit:cover;object-position:center;max-width:190px;height:96px}
+[data-theme=dark] .client-logos img.kentau-logo{filter:grayscale(1) invert(1) brightness(1.5);mix-blend-mode:screen}
+[data-theme=dark] .client-logos img.badge-logo{filter:grayscale(1) invert(1);mix-blend-mode:screen}
+@media(min-width:1100px){.client-logos{grid-template-columns:repeat(5,minmax(0,1fr))}.client-logos li:nth-child(n){border:0;padding:22px 25px}.client-logos li:not(:nth-child(5n+1)){border-left:1px solid var(--line)}.client-logos li:nth-child(n+6){border-top:1px solid var(--line)}}
+@media(max-width:760px){.client-logos img.kentau-logo{height:84px}}
+/* Additional clients use the same scale in both themes. */
+.client-name-mark{font-size:32px;font-weight:650;letter-spacing:-.04em;color:var(--primary);line-height:1.1}
+[data-theme=dark] .client-name-mark{color:#eef6ff;opacity:.8}
+@media(min-width:1100px){.client-logos{grid-template-columns:repeat(4,minmax(0,1fr))}.client-logos li:nth-child(n){border:0;padding:22px 30px}.client-logos li:not(:nth-child(4n+1)){border-left:1px solid var(--line)}.client-logos li:nth-child(n+5){border-top:1px solid var(--line)}}
+/* Original CENTOS wordmark: remove the solid field through theme blending. */
+.client-logos img.centos-logo{object-fit:cover;object-position:center;height:96px;max-width:165px;filter:grayscale(1) contrast(10) invert(1);mix-blend-mode:multiply;opacity:.9}
+[data-theme=dark] .client-logos img.centos-logo{filter:grayscale(1) contrast(10);mix-blend-mode:screen;opacity:.8}
+@media(max-width:760px){.client-logos img.centos-logo{height:84px}}
 </style></head>
 <body data-page="company">
   <a class="skip" href="#main">К содержанию</a>
@@ -224,7 +238,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--primary);outline-of
           <li><img src="images/clients/danone.png" alt="Danone" width="220" height="130" loading="eager" decoding="async"></li>
           <li><img src="images/clients/shin-line.png" alt="Шин-Лайн" width="220" height="130" loading="eager" decoding="async"></li>
           <li><img src="images/clients/hamle.png" alt="Hamle — Хамле" width="220" height="130" loading="eager" decoding="async"></li>
-        <li><img class="cutout-logo" src="images/clients/pepsico.png" alt="PepsiCo" width="220" height="130" decoding="async"></li><li><img class="cutout-logo" src="images/clients/bericap.png" alt="BERICAP" width="220" height="130" decoding="async"></li><li><img class="cutout-logo" src="images/clients/samal.png" alt="Samal" width="220" height="130" decoding="async"></li><li><img class="" src="images/clients/boke-brothers.png" alt="Boke Brothers" width="220" height="130" decoding="async"></li></ul>
+        <li><img class="cutout-logo" src="images/clients/pepsico.png" alt="PepsiCo" width="220" height="130" decoding="async"></li><li><img class="cutout-logo" src="images/clients/bericap.png" alt="BERICAP" width="220" height="130" decoding="async"></li><li><img class="cutout-logo" src="images/clients/samal.png" alt="Samal" width="220" height="130" decoding="async"></li><li><img class="" src="images/clients/boke-brothers.png" alt="Boke Brothers" width="220" height="130" decoding="async"></li><li><img class="badge-logo" src="images/clients/americana.png" alt="Americana" width="220" height="130" decoding="async"></li><li><img class="badge-logo" src="images/clients/lukoil.png" alt="LUKOIL" width="220" height="130" decoding="async"></li><li><img class="kentau-logo" src="images/clients/kentau-cable.png" alt="Kentau Cable Industries" width="220" height="130" decoding="async"></li><li><img class="cutout-logo" src="images/clients/welding-company.png" alt="Welding Company" width="220" height="130" decoding="async"></li><li><img class="centos-logo" src="images/clients/centos.png" alt="CENTOS Central Logistics GmbH" width="220" height="130" decoding="async"></li></ul>
       </div>
     </section>
   <section class="wrap recognition"><div><div class="eyebrow">2023</div><h2>«Компания года»</h2><p>Fast Way Logistics отмечена сертификатом «Компания года 2023» по результатам комплексной оценки благонадёжности и финансово-экономических показателей.</p></div><a href="images/documents/company-2023-certificate.jpg" target="_blank" rel="noopener"><img src="images/documents/company-2023-certificate.jpg" alt="Сертификат «Компания года 2023»" width="1280" height="914" decoding="async"></a></section></main>

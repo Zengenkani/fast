@@ -199,6 +199,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--primary);outline-of
 [data-page=index] .portal-art svg.premium-icon :is(path,circle,ellipse,rect,line,polyline,polygon){vector-effect:non-scaling-stroke;stroke-width:1.45px}
 [data-theme=dark] [data-page=index] .portal-art{background:linear-gradient(145deg,#274157,#192d40);color:#c6e3f7;border-color:#486175}
 @media(max-width:600px){[data-page=index] .portal-art svg.premium-icon{width:60px;height:60px}}
+/* Ten client identities: balanced rows and theme-aware original marks. */
+.client-logos img.kentau-logo{object-fit:cover;object-position:center;max-width:190px;height:96px}
+[data-theme=dark] .client-logos img.kentau-logo{filter:grayscale(1) invert(1) brightness(1.5);mix-blend-mode:screen}
+[data-theme=dark] .client-logos img.badge-logo{filter:grayscale(1) invert(1);mix-blend-mode:screen}
+@media(min-width:1100px){.client-logos{grid-template-columns:repeat(5,minmax(0,1fr))}.client-logos li:nth-child(n){border:0;padding:22px 25px}.client-logos li:not(:nth-child(5n+1)){border-left:1px solid var(--line)}.client-logos li:nth-child(n+6){border-top:1px solid var(--line)}}
+@media(max-width:760px){.client-logos img.kentau-logo{height:84px}}
+/* Additional clients use the same scale in both themes. */
+.client-name-mark{font-size:32px;font-weight:650;letter-spacing:-.04em;color:var(--primary);line-height:1.1}
+[data-theme=dark] .client-name-mark{color:#eef6ff;opacity:.8}
+@media(min-width:1100px){.client-logos{grid-template-columns:repeat(4,minmax(0,1fr))}.client-logos li:nth-child(n){border:0;padding:22px 30px}.client-logos li:not(:nth-child(4n+1)){border-left:1px solid var(--line)}.client-logos li:nth-child(n+5){border-top:1px solid var(--line)}}
+/* Original CENTOS wordmark: remove the solid field through theme blending. */
+.client-logos img.centos-logo{object-fit:cover;object-position:center;height:96px;max-width:165px;filter:grayscale(1) contrast(10) invert(1);mix-blend-mode:multiply;opacity:.9}
+[data-theme=dark] .client-logos img.centos-logo{filter:grayscale(1) contrast(10);mix-blend-mode:screen;opacity:.8}
+@media(max-width:760px){.client-logos img.centos-logo{height:84px}}
 </style></head>
 <body data-page="index">
   <a class="skip" href="#main">К содержанию</a>
